@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.header{grid-area: header;}
+.sidebar{grid-area: sidebar;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+
+
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 'header header header'
+    'sidebar main main'
+    'footer footer footer';
+}
+
+.container .header{
+    width:100%;
+    height: 90px;
+    background-color:rgba(152, 147, 147, 0.804)
+}
+.header .header-left{
+    padding-top: 17px;
+    float: left;
+
+}
+.header-left li{
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.header .header-right{
+    padding-top: 23px;
+    float: right;
+    
+    
+}
+.header-right li{
+    padding-right: 50px;
+    font-size: 24px;
+    padding-top: 10px;
+    
+}
+.header-right li a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+i.fa-cutlery.fa-cutlery {
+    font-size: 50px;
+}
+
+.container .footer{
+    width:100%;
+    height: 70px;
+    background-color:rgba(152, 147, 147, 0.804)
+}
+.container .sidebar{
+    width: 300px;
+    margin-left: 20px;
+    height: 600px;
+    background-color:rgba(81, 77, 77, 0.804)
+    
+    
+}
+.container .main{
+    margin-right: 20px;
+    height: auto;
+    
+}
+.main .main-sub-menu{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(79, 52, 52);
+    text-align: center;
+    padding-top: 1%;
+}
+.main .main-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-flex .main-flex-box{
+    margin: 20px;
+    width: 240px;
+    height: auto;
+    background-color: rgb(88, 83, 83);
+    text-align: center;
+}
+.main-flex-box img{
+    display: block;
+    width: 168px;
+    height: 207px;
+    margin: auto;
+    margin-top: 20px;
+}
+input {
+    width:420px;
+    height: 40px;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+button{
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.main-flex .main-flex-reviewbox{
+    font-size: 10px;
+    margin: 20px;
+    width: 240px;
+    height: 200px;
+    background-color: rgb(88, 83, 83);
+    text-align: justify;
+    padding: 1%;
+}
+
+
+p{
+    padding-top: 25%;
+    justify-content:space-around;
+}
+
+
+.sidebar{
+    font-style: italic;
+    justify-content:space-around;
+    padding-top: 5%;
+    margin: auto;
+    padding-left: 1%;
+    
+}
+
+.footer {
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+
+
+
+
+
+
+
